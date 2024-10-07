@@ -52,7 +52,7 @@
         />
 
     <ImageView
-        android:id="@+id/endCenter"
+        android:id="@+id/bottomCenter"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginTop="56dp"
@@ -78,16 +78,40 @@
         android:id="@+id/topStart"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:layout_marginStart="56dp"
         android:layout_marginBottom="56dp"
+        android:layout_marginStart="6dp"
+
         android:background="#333333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/topCenter"
+        app:layout_constraintEnd_toStartOf="@id/topCenter"
         app:layout_constraintBottom_toTopOf="@id/centerStart"
 
         />
 
+    <ImageView
+        android:id="@+id/bottomStart"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="56dp"
+        android:background="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bottomCenter"
+        app:layout_constraintTop_toBottomOf="@id/centerStart"
+        />
 
+    <ImageView
+        android:id="@+id/bottomEnd"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:background="#333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bottomCenter"
+        app:layout_constraintStart_toTopOf="@id/bottomCenter"
+
+
+        app:layout_constraintTop_toBottomOf="@id/centerEnd" />
 
 
 
