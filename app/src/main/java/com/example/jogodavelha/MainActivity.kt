@@ -1,6 +1,8 @@
 package com.example.jogodavelha
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,7 +16,11 @@ class MainActivity : AppCompatActivity() {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+            insets}
+
+            val center: ImageView = findViewById(R.id.center)
+            center.setOnClickListener {
+                Toast.makeText(this@MainActivity,"Teste", Toast.LENGTH_SHORT).show()
+            }
     }
 }
