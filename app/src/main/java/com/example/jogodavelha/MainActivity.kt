@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
             val center: ImageView = findViewById(R.id.center)
             center.setOnClickListener {
-                Toast.makeText(this@MainActivity,"Teste", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity,"Teste!", Toast.LENGTH_SHORT).show()
             }
     }
 }
